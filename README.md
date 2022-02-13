@@ -6,7 +6,7 @@ For this challenge, my goal was to create a web application from scratch. The ap
 
 ## The Finished Product
 
-![screenshot of application](./assets/images/application-screenshot.PNG)
+![screenshot of application](./assets/images/application-screenshot.png)
 
 Website Link: https://nitishd22.github.io/challenge-02/
 
