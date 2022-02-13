@@ -13,7 +13,7 @@ body{
     padding: 0;
     font-family: 'Trebuchet MS', sans-serif;
     color: var(--tertiary-color);
-    background-color: #fff;
+    background-color: var(--primary-color);
 
 }
 header {
@@ -25,10 +25,11 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     position: sticky;
+    margin:1;
 }
 
 header h1 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     background-color: var(--tertiary-color);
     padding: 5px 1% 5px 1%;
     margin: 0;
@@ -37,7 +38,7 @@ header h1 {
 }
 
 header a:hover{
-    color: #fff;
+    color:var(--primary-color);
 }
 
 
@@ -48,29 +49,40 @@ nav{
 }
 
 nav a{
-    padding: 5px 5px;
-    color: var(--secondary-color);
+    font-size:2rem;
+    padding: 10px 15px;
+    color: var(--primary-color);
+    font-style:normal;
+    text-decoration: none;
 }
-
+nav a:hover{
+    color:var(--secondary-color);
+}
 .hero{
-    background-image:url("..images/banner.jpg");
+    background:var(--tertiary-color);
+    background:url("../images/banner.jpg");
+    opacity:.8;
     min-height: 20vh;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    align-items: flex-end;
-    position: relative;
     padding: 2% 6%
 }
 .hero img{
     width: 200px;
     margin: 20px;
     border-radius:20%;
+    align-items: center;
 }
 .hero div {
     flex: 0 0 90%;
+}
+
+.hero div h2{
+    color: var(--primary-color);
+    justify-content: right;
 }
 
 /* content */
@@ -84,9 +96,10 @@ nav a{
 
 .about-section{
     display:flex;
-    margin: 25px;
+    margin-left:auto;
+    margin-right: auto;
     font-size: 1.25rem;
-    padding: 10px 0;
+    padding: 2%;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
@@ -117,12 +130,13 @@ nav a{
 }
 
 .grid-item:first-child {
-    grid-column:span 8;
-    grid-row: span 2;
+    grid-column:span 5;
+    grid-row: span 5;
 }
 
 .grid-item:hover{
-    background-color:rgba(0, 0, 0, 0.322)
+    transition: opacity .5s ease-in-out;
+    opacity:0.8;
 }
 
 .grid-item h3{
@@ -143,4 +157,28 @@ nav a{
 
 .work-section{
     font-size: 1.25rem;
+}
+
+.contact-section address{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-section address a {
+    color: var(--tertiary-color);
+    padding: 10px;
+    font-size: 1rem;
+    font-style: normal;
+    display: inline-block;
+}
+.contact-section address a:hover{
+    color:var(--secondary-color);
+}
+
+footer{
+    text-align: center;
+    vertical-align: bottom;
+    padding: 2%;
 }
