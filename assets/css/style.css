@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+:root {
+    --primary-color: #FFF;
+    --secondary-color: #88e29e;
+    --tertiary-color: #196F32;
+  }
+
+body{
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: var(--tertiary-color);
+    background-color: #fff;
+
+}
+header {
+    padding: 15px 6% 15px 0;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: sticky;
+}
+
+header h1 {
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    padding: 5px 1% 5px 1%;
+    margin: 0;
+    font-size: 3.5vw;
+    line-height: 1;
+}
+
+header a:hover{
+    color: #fff;
+}
+
+
+nav{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+nav a{
+    padding: 5px 5px;
+    color: var(--secondary-color);
+}
+
+.hero{
+    background-image:url("..images/banner.jpg");
+    min-height: 20vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    position: relative;
+    padding: 2% 6%
+}
+.hero img{
+    width: 200px;
+    margin: 20px;
+    border-radius:20%;
+}
+.hero div {
+    flex: 0 0 90%;
+}
+
+/* content */
+
+.content{
+    max-width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+
+.about-section{
+    display:flex;
+    margin: 25px;
+    font-size: 1.25rem;
+    padding: 10px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+}
+
+.container{
+    display: grid;
+    row-gap:15px;
+    column-gap:15px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(12,1);
+    grid-auto-rows: minmax(150px,1);
+}
+
+.grid-item{
+    border: 5px solid var(--tertiary-color);
+    grid-column: span 4;
+    background-color: var(--primary);
+    color: var(--tertiary);
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 20px 0;
+    background-size: 150%;
+    font-size: 0.8rem;
+}
+
+.grid-item:first-child {
+    grid-column:span 8;
+    grid-row: span 2;
+}
+
+.grid-item:hover{
+    background-color:rgba(0, 0, 0, 0.322)
+}
+
+.grid-item h3{
+    font-size: 1.7rem;
+}
+.grid-item div{
+    background-color: var(--secondary-color);
+    padding: 10px 10px;
+}
+
+.horiseon {
+    background-image: url("../images/horiseon.jpg");
+}
+
+.runbuddy {
+    background-image: url("../images/runbuddy.PNG");
+}
+
+.work-section{
+    font-size: 1.25rem;
+}
