@@ -1,4 +1,4 @@
-Challenge #2 - Advanced CSS Challenge: Professional Portfolio
+Advanced CSS Challenge: Professional Portfolio
 
 ## The Objective 
 
