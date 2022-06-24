@@ -1,8 +1,8 @@
-Advanced CSS Challenge: Professional Portfolio
+#Professional Portfolio
 
 ## The Objective 
 
-For this challenge, my goal was to create a web application from scratch. The application in question was a page for my personal portfolio. I used HTML and CSS to create this, using concepts such as flex boxes, variables, and more. I also included many small details such as transparent grid items when hovered over.
+My goal was to create a web application from scratch. The application in question was a page for my personal portfolio. I used HTML and CSS to create this, using concepts such as flex boxes, variables, and more. I also included many small details such as transparent grid items when hovered over.
 
 ## The Finished Product
 
